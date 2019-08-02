@@ -90,10 +90,15 @@ while True:
     # Check for a collision with the border
     if head.xcor() > 290 or head.xcor() < -290 or head.ycor(
     ) > 290 or head.ycor() < -290:
-        time.sleep(1)
+        time.sleep(0.8)
         head.goto(0, 0)
         head.direction = "stop"
 
+        # Hide the segments
+        for sg in seg:
+            sg.goto(1000, 1000)
+        # Clear the segments list
+        seg.clear()
     # Check for a collision
     if head.distance(food) < 20:
         # Move the food randomly
