@@ -11,8 +11,8 @@ This is a one or two days project for a beginner who want to learn python and do
 - scr.onkeypress(go_left, "a")
 - scr.onkeypress(go_right, "d")
 
-- You can change the difficulty by modify the value of "dy".
- " dy -= 0.007 "
+You can change the difficulty by modify the value of "dy".
+ - dy -= 0.007 
 
 # TODO
 -Add players ( with nickname and scores )
